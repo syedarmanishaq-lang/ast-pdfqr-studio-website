@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://astpdfqrstudio.example.com/sitemap.xml
+Sitemap: https://ast-pdfqr-studio.vercel.app/sitemap.xml
