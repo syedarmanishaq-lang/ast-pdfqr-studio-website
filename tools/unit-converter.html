@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- NOTE: canonical/OG URLs use https://astpdfqrstudio.example.com — replace with the real domain at deploy. -->
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Unit Converter — Length, Weight, Temperature, Data | AST PDF &amp; QR Studio</title>
+<meta name="description" content="Convert length, weight, temperature and data sizes instantly. Clean two-way converter — type in either field. Free, offline, no sign-up.">
+<link rel="canonical" href="https://astpdfqrstudio.example.com/tools/unit-converter.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0A1628">
+<link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AST PDF &amp; QR Studio">
+<meta property="og:title" content="Free Unit Converter — Length, Weight, Temperature, Data">
+<meta property="og:description" content="Instant two-way unit conversion. Free &amp; offline.">
+<meta property="og:url" content="https://astpdfqrstudio.example.com/tools/unit-converter.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free Unit Converter — AST PDF &amp; QR Studio">
+<meta name="twitter:description" content="Length, weight, temperature, data conversion. Free &amp; offline.">
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('ast-theme')||'dark')}catch(e){}</script>
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Unit Converter — AST PDF & QR Studio","url":"https://astpdfqrstudio.example.com/tools/unit-converter.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+</head>
+<body>
+<div class="page-enter">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="AST PDF &amp; QR Studio home">
+      <span class="brand-mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 64 64"><g fill="#D4AF37"><rect x="16" y="16" width="12" height="12" rx="2"/><rect x="36" y="16" width="12" height="12" rx="2"/><rect x="16" y="36" width="12" height="12" rx="2"/><rect x="36" y="36" width="5" height="5"/><rect x="43" y="36" width="5" height="5"/><rect x="36" y="43" width="5" height="5"/><rect x="43" y="43" width="5" height="5"/></g></svg></span>
+      <span class="brand-name">AST PDF &amp; QR Studio<small>Offline Toolkit</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a class="back-link keep" href="../index.html">← All tools</a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle light/dark theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="tool-hero">
+    <div class="wrap wrap-narrow">
+      <h1>Unit Converter</h1>
+      <p class="lede">Length, weight, temperature and data sizes — type in either field and the other updates instantly.</p>
+    </div>
+  </section>
+
+  <div class="wrap wrap-narrow">
+    <div class="tool-panel">
+      <div class="tabs" role="tablist" id="uc-tabs">
+        <button class="tab active" data-cat="length" role="tab">Length</button>
+        <button class="tab" data-cat="weight" role="tab">Weight</button>
+        <button class="tab" data-cat="temperature" role="tab">Temperature</button>
+        <button class="tab" data-cat="data" role="tab">Data</button>
+      </div>
+
+      <div class="row-2" style="align-items:end">
+        <div class="field">
+          <label for="uc-from-unit">From</label>
+          <select id="uc-from-unit"></select>
+        </div>
+        <div class="field">
+          <label for="uc-to-unit">To</label>
+          <select id="uc-to-unit"></select>
+        </div>
+      </div>
+      <div class="row-2" style="align-items:center">
+        <div class="field">
+          <label for="uc-a" id="uc-a-label">Value</label>
+          <input type="number" id="uc-a" value="1" step="any">
+        </div>
+        <div class="field">
+          <label for="uc-b" id="uc-b-label">Result</label>
+          <input type="number" id="uc-b" step="any">
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">
+        <button class="btn btn-ghost btn-sm" id="uc-swap">⇄ Swap units</button>
+        <button class="btn btn-ghost btn-sm" id="uc-copy">Copy result</button>
+      </div>
+      <p class="hint" id="uc-formula" style="margin-top:16px;font-size:.88rem;color:var(--text-dim)"></p>
+
+      <div class="privacy-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        <span>Plain arithmetic in your browser — instant and private, online or off.</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© <span id="year">2026</span> AST Studio · <a href="../index.html">All 16 tools</a></span>
+      <span class="offline-badge"><span class="dot"></span>Works offline</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script src="../js/common.js"></script>
+<script>
+(function () {
+  'use strict';
+  var $ = AST.$;
+
+  var CATS = {
+    length: {
+      label: 'Length',
+      units: [['Millimeters', 'mm'], ['Centimeters', 'cm'], ['Meters', 'm'], ['Kilometers', 'km'],
+              ['Inches', 'in'], ['Feet', 'ft'], ['Miles', 'mi']],
+      toBase: { mm: 0.001, cm: 0.01, m: 1, km: 1000, in: 0.0254, ft: 0.3048, mi: 1609.344 }
+    },
+    weight: {
+      label: 'Weight',
+      units: [['Grams', 'g'], ['Kilograms', 'kg'], ['Pounds', 'lb'], ['Ounces', 'oz']],
+      toBase: { g: 1, kg: 1000, lb: 453.59237, oz: 28.349523125 }
+    },
+    temperature: {
+      label: 'Temperature',
+      units: [['Celsius', 'C'], ['Fahrenheit', 'F'], ['Kelvin', 'K']],
+      special: true
+    },
+    data: {
+      label: 'Data',
+      units: [['Bytes', 'B'], ['Kilobytes', 'KB'], ['Megabytes', 'MB'], ['Gigabytes', 'GB'], ['Terabytes', 'TB']],
+      toBase: { B: 1, KB: 1024, MB: 1048576, GB: 1073741824, TB: 1099511627776 }
+    }
+  };
+
+  /* Core — exposed for tests */
+  function convertUnit(cat, value, from, to) {
+    var c = CATS[cat];
+    if (!c) throw new Error('Unknown category');
+    var v = parseFloat(value);
+    if (!isFinite(v)) return NaN;
+    if (c.special) {
+      var k = from === 'C' ? v + 273.15 : from === 'F' ? (v + 459.67) * 5 / 9 : v;
+      return to === 'C' ? k - 273.15 : to === 'F' ? k * 9 / 5 - 459.67 : k;
+    }
+    return v * c.toBase[from] / c.toBase[to];
+  }
+  AST.convertUnit = convertUnit;
+  AST._unitCats = CATS;
+
+  var cat = 'length', editing = null;
+
+  function fillUnits() {
+    var c = CATS[cat];
+    var fs = $('#uc-from-unit'), ts = $('#uc-to-unit');
+    fs.innerHTML = ''; ts.innerHTML = '';
+    c.units.forEach(function (u) {
+      var o1 = document.createElement('option'); o1.value = u[1]; o1.textContent = u[0] + ' (' + u[1] + ')';
+      var o2 = o1.cloneNode(true);
+      fs.appendChild(o1); ts.appendChild(o2);
+    });
+    var defaults = { length: ['m', 'ft'], weight: ['kg', 'lb'], temperature: ['C', 'F'], data: ['MB', 'GB'] };
+    fs.value = defaults[cat][0]; ts.value = defaults[cat][1];
+    $('#uc-a-label').textContent = 'Value (' + fs.value + ')';
+    $('#uc-b-label').textContent = 'Result (' + ts.value + ')';
+  }
+
+  function fmt(n) {
+    if (!isFinite(n)) return '';
+    var a = Math.abs(n);
+    if (a !== 0 && (a >= 1e15 || a < 1e-9)) return n.toExponential(6);
+    return String(Math.round(n * 1e10) / 1e10);
+  }
+
+  function convertFromA() {
+    editing = 'a';
+    var r = convertUnit(cat, $('#uc-a').value, $('#uc-from-unit').value, $('#uc-to-unit').value);
+    $('#uc-b').value = fmt(r);
+    showFormula();
+  }
+  function convertFromB() {
+    editing = 'b';
+    var r = convertUnit(cat, $('#uc-b').value, $('#uc-to-unit').value, $('#uc-from-unit').value);
+    $('#uc-a').value = fmt(r);
+    showFormula();
+  }
+  function showFormula() {
+    var a = $('#uc-a').value, b = $('#uc-b').value;
+    $('#uc-formula').textContent = a !== '' && b !== ''
+      ? a + ' ' + $('#uc-from-unit').value + ' = ' + b + ' ' + $('#uc-to-unit').value
+      : '';
+  }
+
+  document.querySelectorAll('#uc-tabs .tab').forEach(function (t) {
+    t.addEventListener('click', function () {
+      document.querySelectorAll('#uc-tabs .tab').forEach(function (x) { x.classList.remove('active'); });
+      t.classList.add('active');
+      cat = t.getAttribute('data-cat');
+      fillUnits();
+      $('#uc-a').value = '1';
+      convertFromA();
+    });
+  });
+
+  $('#uc-a').addEventListener('input', convertFromA);
+  $('#uc-b').addEventListener('input', convertFromB);
+  $('#uc-from-unit').addEventListener('change', function () {
+    $('#uc-a-label').textContent = 'Value (' + this.value + ')';
+    convertFromA();
+  });
+  $('#uc-to-unit').addEventListener('change', function () {
+    $('#uc-b-label').textContent = 'Result (' + this.value + ')';
+    convertFromA();
+  });
+  $('#uc-swap').addEventListener('click', function () {
+    var f = $('#uc-from-unit'), t = $('#uc-to-unit');
+    var tmp = f.value; f.value = t.value; t.value = tmp;
+    $('#uc-a-label').textContent = 'Value (' + f.value + ')';
+    $('#uc-b-label').textContent = 'Result (' + t.value + ')';
+    convertFromA();
+  });
+  $('#uc-copy').addEventListener('click', function () {
+    AST.copyText($('#uc-formula').textContent || $('#uc-b').value, 'Result copied');
+  });
+
+  fillUnits();
+  convertFromA();
+})();
+</script>
+</body>
+</html>
