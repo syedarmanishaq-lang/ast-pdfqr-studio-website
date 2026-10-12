@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- NOTE: canonical/OG URLs use https://astpdfqrstudio.example.com — replace with the real domain at deploy. -->
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free PDF to Images — Convert PDF Pages to PNG | AST PDF &amp; QR Studio</title>
+<meta name="description" content="Render every page of a PDF to a high-quality PNG image. Download pages one by one or all together as a ZIP. Free, offline, private.">
+<link rel="canonical" href="https://astpdfqrstudio.example.com/tools/pdf-to-images.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0A1628">
+<link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AST PDF &amp; QR Studio">
+<meta property="og:title" content="Free PDF to Images — Convert PDF Pages to PNG">
+<meta property="og:description" content="Turn PDF pages into PNG images, single or ZIP download. Free &amp; offline.">
+<meta property="og:url" content="https://astpdfqrstudio.example.com/tools/pdf-to-images.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free PDF to Images — AST PDF &amp; QR Studio">
+<meta name="twitter:description" content="Convert PDF pages to PNG. Free &amp; offline.">
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('ast-theme')||'dark')}catch(e){}</script>
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"PDF to Images — AST PDF & QR Studio","url":"https://astpdfqrstudio.example.com/tools/pdf-to-images.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+</head>
+<body>
+<div class="page-enter">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="AST PDF &amp; QR Studio home">
+      <span class="brand-mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 64 64"><g fill="#D4AF37"><rect x="16" y="16" width="12" height="12" rx="2"/><rect x="36" y="16" width="12" height="12" rx="2"/><rect x="16" y="36" width="12" height="12" rx="2"/><rect x="36" y="36" width="5" height="5"/><rect x="43" y="36" width="5" height="5"/><rect x="36" y="43" width="5" height="5"/><rect x="43" y="43" width="5" height="5"/></g></svg></span>
+      <span class="brand-name">AST PDF &amp; QR Studio<small>Offline Toolkit</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a class="back-link keep" href="../index.html">← All tools</a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle light/dark theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="tool-hero">
+    <div class="wrap wrap-narrow">
+      <h1>PDF → Images</h1>
+      <p class="lede">Convert each page of a PDF into a crisp PNG image. Grab single pages or download them all as one ZIP.</p>
+    </div>
+  </section>
+
+  <div class="wrap wrap-narrow">
+    <div class="tool-panel">
+      <div class="dropzone" id="p2i-drop">
+        <svg class="dz-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="14" height="16" rx="2"/><circle cx="7.5" cy="10" r="1.4"/><path d="M4.5 17l3-3 2 2 2.5-2.5 2.5 2.5"/></svg>
+        <p><strong>Drop a PDF here</strong> or click to choose<br>Pages render at high resolution</p>
+        <input type="file" id="p2i-file" accept="application/pdf,.pdf" hidden>
+      </div>
+      <div id="p2i-error" style="margin-top:14px"></div>
+
+      <div id="p2i-result" style="display:none;margin-top:20px">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:6px">
+          <h2 style="margin:0"><span id="p2i-pages"></span></h2>
+          <button class="btn btn-primary btn-sm" id="p2i-zip">Download all as ZIP</button>
+        </div>
+        <div class="progress" id="p2i-prog" style="display:none"><div></div></div>
+        <div class="thumb-list" id="p2i-list"></div>
+      </div>
+
+      <div class="privacy-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        <span>Rendering happens locally with PDF.js. Your document never leaves this tab.</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© <span id="year">2026</span> AST Studio · <a href="../index.html">All 16 tools</a></span>
+      <span class="offline-badge"><span class="dot"></span>Works offline</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script src="../js/common.js"></script>
+<script src="../vendor/jszip.min.js"></script>
+<script type="module">
+import { renderPdfPages } from '../js/pdfjs-local.mjs';
+
+const $ = AST.$;
+window.AST = window.AST || {};
+AST.renderPdfPages = renderPdfPages; /* exposed for tests */
+
+let rendered = []; /* [{page, canvas}] */
+let baseName = 'ast-pdf';
+
+const drop = $('#p2i-drop'), input = $('#p2i-file');
+drop.addEventListener('click', () => input.click());
+['dragover', 'dragenter'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.add('drag'); }));
+['dragleave', 'drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.remove('drag'); }));
+drop.addEventListener('drop', e => { if (e.dataTransfer.files.length) handle(e.dataTransfer.files[0]); });
+input.addEventListener('change', () => { if (input.files.length) handle(input.files[0]); input.value = ''; });
+
+async function handle(file) {
+  AST.clearBox('#p2i-error');
+  $('#p2i-result').style.display = 'none';
+  $('#p2i-list').innerHTML = '';
+  rendered = [];
+  if (!/pdf$/i.test(file.type) && !/\.pdf$/i.test(file.name)) {
+    AST.showError('#p2i-error', 'Please choose a PDF file.');
+    return;
+  }
+  baseName = file.name.replace(/\.pdf$/i, '') || 'ast-pdf';
+  const prog = $('#p2i-prog');
+  prog.style.display = '';
+  const bar = prog.querySelector('div');
+  try {
+    const buf = await AST.readAsArrayBuffer(file);
+    const { numPages, pages } = await renderPdfPages(buf, 2, (i, n) => {
+      bar.style.width = Math.round((i / n) * 100) + '%';
+    });
+    rendered = pages;
+    $('#p2i-pages').textContent = numPages + ' page' + (numPages > 1 ? 's' : '') + ' rendered';
+    const list = $('#p2i-list');
+    pages.forEach(({ page, canvas }) => {
+      const d = document.createElement('div');
+      d.className = 'thumb';
+      const label = document.createElement('div');
+      label.className = 't-name'; label.textContent = 'Page ' + page;
+      const acts = document.createElement('div');
+      acts.className = 't-actions';
+      const btn = document.createElement('button');
+      btn.className = 'icon-btn'; btn.textContent = 'PNG ↓';
+      btn.addEventListener('click', () => {
+        canvas.toBlob(b => AST.download(b, baseName + '-page-' + page + '.png'), 'image/png');
+      });
+      acts.appendChild(btn);
+      const preview = document.createElement('canvas');
+      const k = Math.min(1, 300 / canvas.width);
+      preview.width = Math.round(canvas.width * k);
+      preview.height = Math.round(canvas.height * k);
+      preview.getContext('2d').drawImage(canvas, 0, 0, preview.width, preview.height);
+      d.appendChild(preview); d.appendChild(label); d.appendChild(acts);
+      list.appendChild(d);
+    });
+    $('#p2i-result').style.display = '';
+    AST.toast('All pages rendered');
+  } catch (err) {
+    AST.showError('#p2i-error', 'Could not render that PDF. It may be corrupted or password-protected.');
+  } finally {
+    prog.style.display = 'none';
+    bar.style.width = '0';
+  }
+}
+
+$('#p2i-zip').addEventListener('click', async () => {
+  if (typeof JSZip === 'undefined') { AST.toast('ZIP library failed to load'); return; }
+  if (!rendered.length) return;
+  AST.toast('Building ZIP…');
+  try {
+    const zip = new JSZip();
+    await Promise.all(rendered.map(({ page, canvas }) =>
+      new Promise(res => canvas.toBlob(b => {
+        zip.file(baseName + '-page-' + page + '.png', b);
+        res();
+      }, 'image/png'))
+    ));
+    const blob = await zip.generateAsync({ type: 'blob' });
+    AST.download(blob, baseName + '-pages.zip');
+    AST.toast('ZIP downloaded');
+  } catch (e) {
+    AST.toast('Could not build the ZIP');
+  }
+});
+</script>
+</body>
+</html>
