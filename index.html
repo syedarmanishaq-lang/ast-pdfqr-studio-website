@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<!-- NOTE: canonical/OG URLs use https://astpdfqrstudio.example.com — replace with the real domain at deploy. -->
+<!-- NOTE: canonical/OG URLs use https://ast-pdfqr-studio.vercel.app — replace with the real domain at deploy. -->
 <html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AST PDF &amp; QR Studio — Free Offline PDF &amp; QR Tools (16 Tools, 100% Private)</title>
 <meta name="description" content="16 free PDF & QR tools that run 100% in your browser — QR generator & scanner, images to PDF, PDF to text/images, compressor, merger, analyzer, password generator, unit converter and more. No uploads, no sign-up, works offline.">
-<link rel="canonical" href="https://astpdfqrstudio.example.com/">
+<link rel="canonical" href="https://ast-pdfqr-studio.vercel.app/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0A1628">
 <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
@@ -14,8 +14,8 @@
 <meta property="og:site_name" content="AST PDF &amp; QR Studio">
 <meta property="og:title" content="AST PDF &amp; QR Studio — Free Offline PDF &amp; QR Tools">
 <meta property="og:description" content="16 free tools that run entirely in your browser. Your files never leave your device.">
-<meta property="og:url" content="https://astpdfqrstudio.example.com/">
-<meta property="og:image" content="https://astpdfqrstudio.example.com/img/favicon.svg">
+<meta property="og:url" content="https://ast-pdfqr-studio.vercel.app/">
+<meta property="og:image" content="https://ast-pdfqr-studio.vercel.app/img/favicon.svg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AST PDF &amp; QR Studio — Free Offline PDF &amp; QR Tools">
 <meta name="twitter:description" content="16 free PDF & QR tools, 100% client-side. Private by design.">
@@ -26,7 +26,7 @@
   "@context": "https://schema.org",
   "@type": "WebApplication",
   "name": "AST PDF & QR Studio",
-  "url": "https://astpdfqrstudio.example.com/",
+  "url": "https://ast-pdfqr-studio.vercel.app/",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Any (web browser)",
   "browserRequirements": "Requires JavaScript",
@@ -284,7 +284,7 @@
     var c = document.getElementById('hero-qr');
     if (!c || typeof qrcode !== 'function') return;
     var qr = qrcode(0, 'M');
-    qr.addData('https://astpdfqrstudio.example.com/');
+    qr.addData('https://ast-pdfqr-studio.vercel.app/');
     qr.make();
     var n = qr.getModuleCount(), ctx = c.getContext('2d'), s = c.width / n;
     ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--input-bg') || '#0a1526';
