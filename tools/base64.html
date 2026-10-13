@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3513714556256768" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free Base64 Encoder &amp; Decoder — Text &amp; Images | AST PDF &amp; QR Studio</title>
+<title>Base64 Encoder &amp; Decoder — Free Online Tool</title>
 <meta name="description" content="Encode text and images to Base64, or decode Base64 back to text. Free, instant and 100% private — everything runs offline in your browser.">
 <link rel="canonical" href="https://ast-pdfqr-studio.vercel.app/tools/base64.html">
 <meta name="robots" content="index, follow">
@@ -13,11 +13,12 @@
 <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AST PDF &amp; QR Studio">
-<meta property="og:title" content="Free Base64 Encoder &amp; Decoder — Text &amp; Images">
+<meta property="og:title" content="Base64 Encoder &amp; Decoder — Free Online Tool">
 <meta property="og:description" content="Encode text/images to Base64 or decode back to text. Free, instant, offline.">
 <meta property="og:url" content="https://ast-pdfqr-studio.vercel.app/tools/base64.html">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Free Base64 Encoder &amp; Decoder — AST PDF &amp; QR Studio">
+<meta property="og:image" content="https://ast-pdfqr-studio.vercel.app/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Base64 Encoder &amp; Decoder — Free Online Tool">
 <meta name="twitter:description" content="Base64 encode/decode for text &amp; images. Free &amp; offline.">
 <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('ast-theme')||'dark')}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +27,38 @@
 <link rel="stylesheet" href="../css/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Base64 Encoder & Decoder — AST PDF & QR Studio","url":"https://ast-pdfqr-studio.vercel.app/tools/base64.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "What is Base64 used for?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Embedding images in HTML/CSS as data URIs, encoding binary data for text-only systems like email (MIME) and JSON APIs, and representing tokens like JWTs."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is Base64 encryption?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No \u2014 it is just an encoding. Anyone can decode Base64 instantly, so it provides zero security. Never use it to protect passwords or secrets."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Why does encoded output look ~33% larger?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Base64 uses 4 characters to represent every 3 bytes of data, so output is always about one-third larger than the input."
+   }
+  }
+ ]
+}
 </script>
 </head>
 <body>
@@ -122,6 +155,34 @@
       </div>
     </div>
   </div>
+  <!-- ============ ABOUT / SEO ============ -->
+  <section class="section-tight seo-content">
+    <div class="wrap wrap-narrow">
+      <h2>About this tool</h2>
+      <p>Encode text or images to Base64 and decode Base64 back to readable text. This free Base64 tool is a staple for developers and curious tinkerers: encode an image to embed it directly in HTML or CSS as a data URI, decode a suspicious string you found in a config file, or prepare binary data for APIs that only accept text.</p>
+      <p>Base64 represents binary data using 64 safe ASCII characters, which is why it shows up in email attachments, JWT tokens, and embedded web assets. Note that Base64 is an encoding, not encryption — anyone can decode it, so never use it to hide secrets. All conversion runs locally in your browser.</p>
+      <h2>How to use</h2>
+      <ol class="how-steps">
+        <li>Choose Encode or Decode mode.</li>
+        <li>Paste text, or select an image file to encode.</li>
+        <li>The result appears instantly in the output box.</li>
+        <li>Copy the result with one click.</li>
+      </ol>
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details><summary>What is Base64 used for?</summary><p>Embedding images in HTML/CSS as data URIs, encoding binary data for text-only systems like email (MIME) and JSON APIs, and representing tokens like JWTs.</p></details>
+        <details><summary>Is Base64 encryption?</summary><p>No — it is just an encoding. Anyone can decode Base64 instantly, so it provides zero security. Never use it to protect passwords or secrets.</p></details>
+        <details><summary>Why does encoded output look ~33% larger?</summary><p>Base64 uses 4 characters to represent every 3 bytes of data, so output is always about one-third larger than the input.</p></details>
+      </div>
+      <h2>Related tools</h2>
+      <div class="related-grid">
+        <a href="image-format-converter.html">Image Converter<span>Free offline tool</span></a>
+        <a href="text-case-converter.html">Text Case Converter<span>Free offline tool</span></a>
+        <a href="password-generator.html">Password Generator<span>Free offline tool</span></a>
+        <a href="word-counter.html">Word Counter<span>Free offline tool</span></a>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
