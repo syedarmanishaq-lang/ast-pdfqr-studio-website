@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3513714556256768" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free QR Code Scanner — Scan with Camera or Image | AST PDF &amp; QR Studio</title>
+<title>Free QR Code Scanner — Scan QR from Camera/Image</title>
 <meta name="description" content="Scan QR codes with your camera or decode them from an uploaded image. Free, private and offline — decoded text never leaves your browser.">
 <link rel="canonical" href="https://ast-pdfqr-studio.vercel.app/tools/qr-scanner.html">
 <meta name="robots" content="index, follow">
@@ -13,11 +13,12 @@
 <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AST PDF &amp; QR Studio">
-<meta property="og:title" content="Free QR Code Scanner — Scan with Camera or Image">
+<meta property="og:title" content="Free QR Code Scanner — Scan QR from Camera/Image">
 <meta property="og:description" content="Decode QR codes via camera or image upload. Free, private, works offline.">
 <meta property="og:url" content="https://ast-pdfqr-studio.vercel.app/tools/qr-scanner.html">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Free QR Code Scanner — AST PDF &amp; QR Studio">
+<meta property="og:image" content="https://ast-pdfqr-studio.vercel.app/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free QR Code Scanner — Scan QR from Camera/Image">
 <meta name="twitter:description" content="Scan QR codes with camera or image. Free &amp; offline.">
 <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('ast-theme')||'dark')}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +27,38 @@
 <link rel="stylesheet" href="../css/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"QR Code Scanner — AST PDF & QR Studio","url":"https://ast-pdfqr-studio.vercel.app/tools/qr-scanner.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Why is my camera not working?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Camera access needs two things: a secure HTTPS connection and your explicit permission. Check that you tapped Allow when the browser asked, and make sure no other app is using the camera."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What kind of data can a QR code contain?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Any text: website URLs, Wi-Fi credentials, plain messages, contact cards (vCard), email addresses, and payment links. This scanner shows you the raw text so you can verify it before opening anything."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is it safe to scan random QR codes?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Mostly, but stay alert: a QR code can hide a malicious link. This scanner shows the decoded text first instead of opening it automatically, so always read the URL before tapping it."
+   }
+  }
+ ]
+}
 </script>
 </head>
 <body>
@@ -101,6 +134,34 @@
       </div>
     </div>
   </div>
+  <!-- ============ ABOUT / SEO ============ -->
+  <section class="section-tight seo-content">
+    <div class="wrap wrap-narrow">
+      <h2>About this tool</h2>
+      <p>This free QR code scanner reads QR codes two ways: live through your device camera, or from a photo or screenshot you upload. Point your camera at any QR code — a restaurant menu, a Wi-Fi login card, a payment code — and the decoded text appears instantly. Prefer not to use the camera? Drop an image file into the upload zone and the same local decoding engine extracts the content.</p>
+      <p>Privacy is the point: decoding happens entirely on your device with the jsQR library. Your camera feed is processed frame-by-frame inside the browser tab and is never recorded, transmitted, or stored anywhere. The scanner needs a secure (HTTPS) page and your permission before the camera activates, and you can revoke that permission at any time in your browser settings.</p>
+      <h2>How to use</h2>
+      <ol class="how-steps">
+        <li>Allow camera access when prompted, or switch to the Upload tab.</li>
+        <li>Point the camera at the QR code — or drop a QR image into the upload zone.</li>
+        <li>The decoded text appears instantly below the preview.</li>
+        <li>Use the copy button to copy the result to your clipboard.</li>
+      </ol>
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details><summary>Why is my camera not working?</summary><p>Camera access needs two things: a secure HTTPS connection and your explicit permission. Check that you tapped Allow when the browser asked, and make sure no other app is using the camera.</p></details>
+        <details><summary>What kind of data can a QR code contain?</summary><p>Any text: website URLs, Wi-Fi credentials, plain messages, contact cards (vCard), email addresses, and payment links. This scanner shows you the raw text so you can verify it before opening anything.</p></details>
+        <details><summary>Is it safe to scan random QR codes?</summary><p>Mostly, but stay alert: a QR code can hide a malicious link. This scanner shows the decoded text first instead of opening it automatically, so always read the URL before tapping it.</p></details>
+      </div>
+      <h2>Related tools</h2>
+      <div class="related-grid">
+        <a href="qr-generator.html">QR Generator<span>Free offline tool</span></a>
+        <a href="barcode-generator.html">Barcode Generator<span>Free offline tool</span></a>
+        <a href="images-to-pdf.html">Images to PDF<span>Free offline tool</span></a>
+        <a href="pdf-to-text.html">PDF to Text<span>Free offline tool</span></a>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
