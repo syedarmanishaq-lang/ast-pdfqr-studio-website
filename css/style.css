@@ -499,3 +499,17 @@ input[type="color"] { width: 52px; height: 40px; padding: 3px; border: 1px solid
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- SEO content sections ---------- */
+.seo-content { padding-top: 8px; }
+.seo-content h2 { font-size: 1.35rem; margin: 2.4rem 0 0.9rem; letter-spacing: -0.01em; }
+.seo-content h2:first-child { margin-top: 0; }
+.seo-content p { color: var(--text-dim); line-height: 1.75; margin: 0 0 1rem; font-size: 0.98rem; }
+.how-steps { margin: 0 0 1rem; padding-left: 1.4rem; color: var(--text-dim); line-height: 1.7; }
+.how-steps li { margin-bottom: 0.55rem; }
+.how-steps li::marker { color: var(--gold); font-weight: 700; }
+.related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 0.5rem; }
+.related-grid a { display: block; padding: 14px 16px; border: 1px solid var(--border); border-radius: 12px;
+  background: var(--surface); font-weight: 600; font-size: 0.92rem; transition: border-color .2s, transform .2s; }
+.related-grid a:hover { border-color: var(--gold); transform: translateY(-2px); }
+.related-grid a span { display: block; font-weight: 400; font-size: 0.82rem; color: var(--text-faint); margin-top: 3px; }
