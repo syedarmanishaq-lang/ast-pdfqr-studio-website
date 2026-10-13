@@ -150,6 +150,15 @@
   function initReveal() {
     var els = $all('.reveal');
     if (!els.length) return;
+    /* stagger tool cards for a human, editorial rhythm */
+    $all('.tool-grid .tool-card').forEach(function (card, i) {
+      card.style.transitionDelay = Math.min(i * 45, 540) + 'ms';
+      var idx = document.createElement('span');
+      idx.className = 't-index';
+      idx.textContent = ('0' + (i + 1)).slice(-2);
+      idx.setAttribute('aria-hidden', 'true');
+      card.insertBefore(idx, card.firstChild);
+    });
     if (reduceMotion || !('IntersectionObserver' in window)) {
       els.forEach(function (el) { el.classList.add('in'); });
       return;
@@ -190,6 +199,16 @@
 
   /* ---------- boot ---------- */
   document.addEventListener('DOMContentLoaded', function () {
+    /* keyboard access for dropzone choose-file buttons */
+    $all('.dz-btn').forEach(function (b) {
+      b.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          var dz = b.closest('.dropzone');
+          if (dz) dz.click();
+        }
+      });
+    });
     $all('[data-theme-toggle]').forEach(function (btn) {
       btn.addEventListener('click', function () {
         setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
