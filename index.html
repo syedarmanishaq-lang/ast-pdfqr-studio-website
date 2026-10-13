@@ -21,6 +21,9 @@
 <meta name="twitter:title" content="AST PDF &amp; QR Studio — Free Offline PDF &amp; QR Tools">
 <meta name="twitter:description" content="16 free PDF & QR tools, 100% client-side. Private by design.">
 <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('ast-theme')||'dark')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {
@@ -288,10 +291,10 @@
     qr.addData('https://ast-pdfqr-studio.vercel.app/');
     qr.make();
     var n = qr.getModuleCount(), ctx = c.getContext('2d'), s = c.width / n;
-    ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--input-bg') || '#0a1526';
+    var dark = document.documentElement.getAttribute('data-theme') !== 'light';
+    ctx.fillStyle = dark ? '#0e1e36' : '#ffffff';
     ctx.fillRect(0, 0, c.width, c.height);
-    ctx.fillStyle = '#0a1628';
-    if (document.documentElement.getAttribute('data-theme') === 'light') ctx.fillStyle = '#16202f';
+    ctx.fillStyle = dark ? '#d4af37' : '#0a1628';
     for (var r = 0; r < n; r++) for (var col = 0; col < n; col++)
       if (qr.isDark(r, col)) ctx.fillRect(col * s, r * s, s + 0.6, s + 0.6);
   } catch (e) { /* decorative only */ }
