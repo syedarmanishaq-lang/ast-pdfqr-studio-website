@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3513714556256768" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free QR Code Generator — Create QR Codes Offline | AST PDF &amp; QR Studio</title>
+<title>Free QR Code Generator — Create QR Codes Online</title>
 <meta name="description" content="Generate QR codes from text or URLs for free. Choose size and error correction, download as PNG. 100% offline — nothing is uploaded.">
 <link rel="canonical" href="https://ast-pdfqr-studio.vercel.app/tools/qr-generator.html">
 <meta name="robots" content="index, follow">
@@ -13,11 +13,12 @@
 <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AST PDF &amp; QR Studio">
-<meta property="og:title" content="Free QR Code Generator — Create QR Codes Offline">
+<meta property="og:title" content="Free QR Code Generator — Create QR Codes Online">
 <meta property="og:description" content="Generate QR codes from text or URLs. Size &amp; error-correction control, PNG download. Runs 100% offline.">
 <meta property="og:url" content="https://ast-pdfqr-studio.vercel.app/tools/qr-generator.html">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Free QR Code Generator — AST PDF &amp; QR Studio">
+<meta property="og:image" content="https://ast-pdfqr-studio.vercel.app/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free QR Code Generator — Create QR Codes Online">
 <meta name="twitter:description" content="Create QR codes from text or URLs, download PNG. Free &amp; offline.">
 <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('ast-theme')||'dark')}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +27,38 @@
 <link rel="stylesheet" href="../css/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"QR Code Generator — AST PDF & QR Studio","url":"https://ast-pdfqr-studio.vercel.app/tools/qr-generator.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Do QR codes expire?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. A QR code is just a visual encoding of text \u2014 it never expires on its own. If the code contains a website link, it keeps working as long as that website stays online."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Which error-correction level should I choose?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Level M (15%) is the best all-rounder. Use Q or H if the code will be printed small, placed outdoors, or might get scratched or dirty. Higher levels make the code slightly denser."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is there a limit on how much text I can encode?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes \u2014 a QR code holds up to about 4,000 alphanumeric characters. Very long text creates a denser code that is harder to scan from a distance, so keep URLs short when possible."
+   }
+  }
+ ]
+}
 </script>
 </head>
 <body>
@@ -111,6 +144,34 @@
       </div>
     </div>
   </div>
+  <!-- ============ ABOUT / SEO ============ -->
+  <section class="section-tight seo-content">
+    <div class="wrap wrap-narrow">
+      <h2>About this tool</h2>
+      <p>A QR code is a two-dimensional barcode that any smartphone camera can read in a fraction of a second. This free QR code generator turns any text, website link, Wi-Fi login, or short message into a crisp, scannable QR code — entirely inside your browser. Because everything runs locally with JavaScript, the text you encode is never sent to a server, which makes this generator safe for sensitive content like private links, internal URLs, or contact details.</p>
+      <p>You control the output: pick from three image sizes (256, 512, or 1024 pixels), choose an error-correction level, and even customize the foreground and background colors. Higher error correction lets the code stay readable even if part of it is damaged, smudged, or partially covered — useful for printed flyers, product packaging, and outdoor signs. The finished QR code downloads as a PNG with a clean white margin (quiet zone) so scanners recognize it instantly.</p>
+      <h2>How to use</h2>
+      <ol class="how-steps">
+        <li>Type or paste your text, URL, or Wi-Fi details into the input box.</li>
+        <li>Choose the image size and error-correction level (M is a good default).</li>
+        <li>Preview the QR code live as you type — it updates instantly.</li>
+        <li>Click Download to save the QR code as a PNG image.</li>
+      </ol>
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details><summary>Do QR codes expire?</summary><p>No. A QR code is just a visual encoding of text — it never expires on its own. If the code contains a website link, it keeps working as long as that website stays online.</p></details>
+        <details><summary>Which error-correction level should I choose?</summary><p>Level M (15%) is the best all-rounder. Use Q or H if the code will be printed small, placed outdoors, or might get scratched or dirty. Higher levels make the code slightly denser.</p></details>
+        <details><summary>Is there a limit on how much text I can encode?</summary><p>Yes — a QR code holds up to about 4,000 alphanumeric characters. Very long text creates a denser code that is harder to scan from a distance, so keep URLs short when possible.</p></details>
+      </div>
+      <h2>Related tools</h2>
+      <div class="related-grid">
+        <a href="qr-scanner.html">QR Scanner<span>Free offline tool</span></a>
+        <a href="barcode-generator.html">Barcode Generator<span>Free offline tool</span></a>
+        <a href="text-to-pdf.html">Text to PDF<span>Free offline tool</span></a>
+        <a href="password-generator.html">Password Generator<span>Free offline tool</span></a>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
