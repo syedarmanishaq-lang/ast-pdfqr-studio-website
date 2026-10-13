@@ -1,5 +1,4 @@
 # AST PDF & QR Studio
-# NOTE: replace the sitemap domain with the real domain at deploy.
 User-agent: *
 Allow: /
 
