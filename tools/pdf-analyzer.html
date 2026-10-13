@@ -20,6 +20,9 @@
 <meta name="twitter:title" content="Free PDF Analyzer — AST PDF &amp; QR Studio">
 <meta name="twitter:description" content="Analyze any PDF: pages, metadata, word stats. Free &amp; offline.">
 <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('ast-theme')||'dark')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"PDF Analyzer — AST PDF & QR Studio","url":"https://ast-pdfqr-studio.vercel.app/tools/pdf-analyzer.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
@@ -47,6 +50,7 @@
 <main>
   <section class="tool-hero">
     <div class="wrap wrap-narrow">
+      <div class="kicker">PDF Tools</div>
       <h1>PDF Analyzer</h1>
       <p class="lede">Drop in a PDF and get the full picture: page count, file size, document metadata, and word &amp; character statistics.</p>
     </div>
@@ -57,7 +61,7 @@
       <div class="dropzone" id="pa-drop">
         <svg class="dz-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M14 2v6h6"/><path d="M9 17v-3M12 17V9M15 17v-5"/></svg>
         <p><strong>Drop a PDF here</strong> or click to choose<br>Analysis runs on your device</p>
-        <input type="file" id="pa-file" accept="application/pdf,.pdf" hidden>
+        <span class="dz-btn" role="button" tabindex="0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4m0 0l-4 4m4-4l4 4"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>Choose file</span><input type="file" id="pa-file" accept="application/pdf,.pdf" hidden>
       </div>
       <div id="pa-error" style="margin-top:14px"></div>
 
