@@ -34,34 +34,58 @@
 </script>
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
-  {
-   "@type": "Question",
-   "name": "What is Base64 used for?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Embedding images in HTML/CSS as data URIs, encoding binary data for text-only systems like email (MIME) and JSON APIs, and representing tokens like JWTs."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Is Base64 encryption?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "No \u2014 it is just an encoding. Anyone can decode Base64 instantly, so it provides zero security. Never use it to protect passwords or secrets."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Why does encoded output look ~33% larger?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Base64 uses 4 characters to represent every 3 bytes of data, so output is always about one-third larger than the input."
-   }
-  }
- ]
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Base64 used for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Embedding images in HTML/CSS as data URIs, encoding binary data for text-only systems like email (MIME) and JSON APIs, and representing tokens like JWTs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Base64 encryption?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — it is just an encoding. Anyone can decode Base64 instantly, so it provides zero security. Never use it to protect passwords or secrets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does encoded output look ~33% larger?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Base64 uses 4 characters to represent every 3 bytes of data, so output is always about one-third larger than the input."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Base64 used for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Embedding images in code or emails, encoding binary data for JSON APIs, and representing tokens and keys as text. Anywhere binary must travel through a text-only channel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Base64 encryption?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — it is encoding, freely reversible by anyone. It provides zero secrecy; never use it to 'protect' passwords or sensitive data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why did my Base64 get longer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By design: Base64 expands data by about 33%. It trades size for the ability to safely represent any bytes as plain text."
+      }
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -169,6 +193,11 @@
       <p>Encode text or images to Base64 and decode Base64 back to readable text. This free Base64 tool is a staple for developers and curious tinkerers: encode an image to embed it directly in HTML or CSS as a data URI, decode a suspicious string you found in a config file, or prepare binary data for APIs that only accept text.</p>
       <p>Base64 represents binary data using 64 safe ASCII characters, which is why it shows up in email attachments, JWT tokens, and embedded web assets. Note that Base64 is an encoding, not encryption — anyone can decode it, so never use it to hide secrets. All conversion runs locally in your browser.</p>
       <p class="seo-extra">Encode and decode Base64 online free with this simple tool. Convert text or files to Base64 for embedding images in code, encoding API payloads, or obfuscating strings — and decode them back just as fast. Everything runs locally in your browser.</p>
+
+      <h3>Pro tips</h3>
+      <p><strong>Base64 is encoding, not encryption.</strong> Anyone can decode Base64 instantly — it hides nothing. Use it for transporting binary data in text, never for protecting secrets.</p>
+      <p><strong>Expect ~33% growth.</strong> Base64 makes data about one-third larger. That's the price of text-safety; don't use it where size is critical without reason.</p>
+      <p><strong>Watch for URL-safe variants.</strong> Standard Base64 includes + and / which break URLs. For tokens and links, some systems use a URL-safe variant — know which one your API expects.</p>
       <h2>How to use</h2>
       <ol class="how-steps">
         <li>Choose Encode or Decode mode.</li>
@@ -181,6 +210,9 @@
         <details><summary>What is Base64 used for?</summary><p>Embedding images in HTML/CSS as data URIs, encoding binary data for text-only systems like email (MIME) and JSON APIs, and representing tokens like JWTs.</p></details>
         <details><summary>Is Base64 encryption?</summary><p>No — it is just an encoding. Anyone can decode Base64 instantly, so it provides zero security. Never use it to protect passwords or secrets.</p></details>
         <details><summary>Why does encoded output look ~33% larger?</summary><p>Base64 uses 4 characters to represent every 3 bytes of data, so output is always about one-third larger than the input.</p></details>
+        <details><summary>What is Base64 used for?</summary><p>Embedding images in code or emails, encoding binary data for JSON APIs, and representing tokens and keys as text. Anywhere binary must travel through a text-only channel.</p></details>
+        <details><summary>Is Base64 encryption?</summary><p>No — it is encoding, freely reversible by anyone. It provides zero secrecy; never use it to 'protect' passwords or sensitive data.</p></details>
+        <details><summary>Why did my Base64 get longer?</summary><p>By design: Base64 expands data by about 33%. It trades size for the ability to safely represent any bytes as plain text.</p></details>
       </div>
       <h2>Related tools</h2>
       <div class="related-grid">
