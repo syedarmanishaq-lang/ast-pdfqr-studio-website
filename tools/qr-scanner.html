@@ -34,34 +34,58 @@
 </script>
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
-  {
-   "@type": "Question",
-   "name": "Why is my camera not working?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Camera access needs two things: a secure HTTPS connection and your explicit permission. Check that you tapped Allow when the browser asked, and make sure no other app is using the camera."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "What kind of data can a QR code contain?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Any text: website URLs, Wi-Fi credentials, plain messages, contact cards (vCard), email addresses, and payment links. This scanner shows you the raw text so you can verify it before opening anything."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Is it safe to scan random QR codes?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Mostly, but stay alert: a QR code can hide a malicious link. This scanner shows the decoded text first instead of opening it automatically, so always read the URL before tapping it."
-   }
-  }
- ]
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why is my camera not working?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Camera access needs two things: a secure HTTPS connection and your explicit permission. Check that you tapped Allow when the browser asked, and make sure no other app is using the camera."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kind of data can a QR code contain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Any text: website URLs, Wi-Fi credentials, plain messages, contact cards (vCard), email addresses, and payment links. This scanner shows you the raw text so you can verify it before opening anything."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to scan random QR codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mostly, but stay alert: a QR code can hide a malicious link. This scanner shows the decoded text first instead of opening it automatically, so always read the URL before tapping it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to scan QR codes with this tool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scanning itself is safe — the tool only reads the encoded text and shows it to you. But never blindly open links from codes you don't trust; preview the URL first, which this scanner shows you before you tap."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which image formats can I upload?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PNG, JPG, and WebP screenshots or photos all work. For best results use a clear, well-lit image where the code fills a good portion of the frame."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can it scan multiple QR codes in one image?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The scanner reads the most prominent code in the image. For photos containing several codes, crop to one code at a time for reliable results."
+      }
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -148,6 +172,11 @@
       <p>This free QR code scanner reads QR codes two ways: live through your device camera, or from a photo or screenshot you upload. Point your camera at any QR code — a restaurant menu, a Wi-Fi login card, a payment code — and the decoded text appears instantly. Prefer not to use the camera? Drop an image file into the upload zone and the same local decoding engine extracts the content.</p>
       <p>Privacy is the point: decoding happens entirely on your device with the jsQR library. Your camera feed is processed frame-by-frame inside the browser tab and is never recorded, transmitted, or stored anywhere. The scanner needs a secure (HTTPS) page and your permission before the camera activates, and you can revoke that permission at any time in your browser settings.</p>
       <p class="seo-extra">This free QR code scanner reads any QR code instantly using your device camera or an uploaded image — no app install and no sign-up required. Point your camera at the code or drop in a screenshot, and the decoded text or link appears immediately, all processed locally on your device. It is a handy online QR reader for checking links before you open them, reading Wi-Fi codes, and verifying printed codes.</p>
+
+      <h3>Pro tips</h3>
+      <p><strong>Good lighting matters most.</strong> If a code won't scan, move to better light before blaming the code. Glare on glossy prints is the top cause of failures — tilt the paper slightly to kill the reflection.</p>
+      <p><strong>Hold steady, then move closer slowly.</strong> Start about 30 cm away and move in gradually. Most scanners lock on faster approaching from far than starting too close.</p>
+      <p><strong>Your files never leave your device.</strong> This scanner decodes the image entirely in your browser. Screenshots of tickets, private links, or payment codes are never uploaded anywhere.</p>
       <h2>How to use</h2>
       <ol class="how-steps">
         <li>Allow camera access when prompted, or switch to the Upload tab.</li>
@@ -160,6 +189,9 @@
         <details><summary>Why is my camera not working?</summary><p>Camera access needs two things: a secure HTTPS connection and your explicit permission. Check that you tapped Allow when the browser asked, and make sure no other app is using the camera.</p></details>
         <details><summary>What kind of data can a QR code contain?</summary><p>Any text: website URLs, Wi-Fi credentials, plain messages, contact cards (vCard), email addresses, and payment links. This scanner shows you the raw text so you can verify it before opening anything.</p></details>
         <details><summary>Is it safe to scan random QR codes?</summary><p>Mostly, but stay alert: a QR code can hide a malicious link. This scanner shows the decoded text first instead of opening it automatically, so always read the URL before tapping it.</p></details>
+        <details><summary>Is it safe to scan QR codes with this tool?</summary><p>Scanning itself is safe — the tool only reads the encoded text and shows it to you. But never blindly open links from codes you don't trust; preview the URL first, which this scanner shows you before you tap.</p></details>
+        <details><summary>Which image formats can I upload?</summary><p>PNG, JPG, and WebP screenshots or photos all work. For best results use a clear, well-lit image where the code fills a good portion of the frame.</p></details>
+        <details><summary>Can it scan multiple QR codes in one image?</summary><p>The scanner reads the most prominent code in the image. For photos containing several codes, crop to one code at a time for reliable results.</p></details>
       </div>
       <h2>Related tools</h2>
       <div class="related-grid">
