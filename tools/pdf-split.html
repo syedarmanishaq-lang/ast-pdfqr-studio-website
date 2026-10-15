@@ -36,42 +36,66 @@
 </script>
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
-  {
-   "@type": "Question",
-   "name": "How do I split a PDF into separate pages?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Upload your PDF, type the pages you want — like 1-3 or 2, 5, 8 — and click Split & Download. You get a brand-new PDF containing only those pages, in the order you listed them."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Does splitting reduce PDF quality?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "No. Pages are copied exactly as they are — text, images, and scans keep full quality. Splitting only selects which pages go into the new file."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Can I extract pages in a custom order?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Yes. Type pages in any order, like 5, 1-3, and the new PDF will contain page 5 first, then pages 1 through 3. Reorder freely."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Is my PDF uploaded anywhere?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "No. Splitting runs entirely in your browser with pdf-lib. Your document never leaves your device."
-   }
-  }
- ]
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I split a PDF into separate pages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Upload your PDF, type the pages you want — like 1-3 or 2, 5, 8 — and click Split & Download. You get a brand-new PDF containing only those pages, in the order you listed them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does splitting reduce PDF quality?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Pages are copied exactly as they are — text, images, and scans keep full quality. Splitting only selects which pages go into the new file."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I extract pages in a custom order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Type pages in any order, like 5, 1-3, and the new PDF will contain page 5 first, then pages 1 through 3. Reorder freely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my PDF uploaded anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Splitting runs entirely in your browser with pdf-lib. Your document never leaves your device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I extract specific pages from a PDF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter the pages you want as ranges (e.g. 1-5, 8, 11-13) and the tool builds a new PDF containing exactly those pages, in the order you listed them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I rearrange pages, not just extract them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — list pages in any order (e.g. 5, 1-3, 9) and the new PDF follows your sequence. It is a quick way to reorder a document without desktop software."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does splitting reduce quality?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Pages are copied without re-rendering, so text and images keep full original quality."
+      }
+    }
+  ]
 }
 </script>
 </head>
@@ -134,12 +158,20 @@
         <li>Click Split &amp; Download.</li>
         <li>Save your new, smaller PDF.</li>
       </ol>
+
+      <h3>Pro tips</h3>
+      <p><strong>Use ranges to grab exactly what you need.</strong> Enter ranges like 1-5, 8, 11-13 to pull specific pages — perfect for extracting one chapter from a manual or one statement from a yearly file.</p>
+      <p><strong>Split before sharing.</strong> Instead of emailing a 200-page document, split out the 5 pages someone actually needs. Smaller files, faster sending, less confusion.</p>
+      <p><strong>Keep the original.</strong> Splitting creates new files; your source PDF is never modified. Work from a copy anyway — good habits prevent accidents.</p>
       <h2>Frequently asked questions</h2>
       <div class="faq">
         <details><summary>How do I split a PDF into separate pages?</summary><p>Upload your PDF, type the pages you want — like 1-3 or 2, 5, 8 — and click Split &amp; Download. You get a brand-new PDF containing only those pages, in the order you listed them.</p></details>
         <details><summary>Does splitting reduce PDF quality?</summary><p>No. Pages are copied exactly as they are — text, images, and scans keep full quality. Splitting only selects which pages go into the new file.</p></details>
         <details><summary>Can I extract pages in a custom order?</summary><p>Yes. Type pages in any order, like 5, 1-3, and the new PDF will contain page 5 first, then pages 1 through 3. Reorder freely.</p></details>
         <details><summary>Is my PDF uploaded anywhere?</summary><p>No. Splitting runs entirely in your browser with pdf-lib. Your document never leaves your device.</p></details>
+        <details><summary>How do I extract specific pages from a PDF?</summary><p>Enter the pages you want as ranges (e.g. 1-5, 8, 11-13) and the tool builds a new PDF containing exactly those pages, in the order you listed them.</p></details>
+        <details><summary>Can I rearrange pages, not just extract them?</summary><p>Yes — list pages in any order (e.g. 5, 1-3, 9) and the new PDF follows your sequence. It is a quick way to reorder a document without desktop software.</p></details>
+        <details><summary>Does splitting reduce quality?</summary><p>No. Pages are copied without re-rendering, so text and images keep full original quality.</p></details>
       </div>
       <h2>Related tools</h2>
       <div class="related-grid">
