@@ -34,34 +34,58 @@
 </script>
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
-  {
-   "@type": "Question",
-   "name": "What metadata can a PDF contain?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Title, author, subject, keywords, creator software, producer, and creation/modification dates. Many files carry more than their owners realize."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Can I remove metadata with this tool?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "The analyzer shows metadata but does not edit files. To strip it, re-export the PDF from clean software or use a dedicated metadata remover."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Is my document uploaded anywhere?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "No. The file is parsed locally by JavaScript in your browser tab and never leaves your device."
-   }
-  }
- ]
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What metadata can a PDF contain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Title, author, subject, keywords, creator software, producer, and creation/modification dates. Many files carry more than their owners realize."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I remove metadata with this tool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The analyzer shows metadata but does not edit files. To strip it, re-export the PDF from clean software or use a dedicated metadata remover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my document uploaded anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The file is parsed locally by JavaScript in your browser tab and never leaves your device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the PDF analyzer tell me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Page count, file size, PDF version, whether pages contain real text or scanned images, and embedded metadata — everything you need to know before sharing or processing a file."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can it detect if a PDF is scanned?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — if no extractable text is found, the pages are images (scans or photos) rather than real text. Those need OCR before text tools will work on them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my document uploaded anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Analysis runs entirely in your browser — the file never leaves your device, so confidential documents stay confidential."
+      }
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -132,6 +156,11 @@
       <p>Get instant intelligence on any PDF. This free PDF analyzer reports the page count, file size, document metadata (title, author, creation date, producer software), and full word and character statistics — all within seconds of opening the file. It is useful for auditing documents before publishing, checking what metadata a file leaks, or quickly sizing up a long report.</p>
       <p>Metadata inspection is a genuine privacy feature: PDFs often carry hidden author names, editing software, and timestamps you may not want to share. This tool surfaces all of it so you can decide what to strip before distributing a file. Analysis is 100% local — your document is parsed in the browser and never uploaded.</p>
       <p class="seo-extra">Inspect any PDF instantly with this free PDF analyzer. See page count, file size, metadata, fonts, and document properties without opening a PDF reader. It is useful for checking files before sharing, auditing documents, or troubleshooting broken PDFs — all processed locally.</p>
+
+      <h3>Pro tips</h3>
+      <p><strong>Check before you send.</strong> A 2-second analysis reveals page count, file size, and whether text is selectable — catching the 'oops, wrong file' moment before your client does.</p>
+      <p><strong>Spot scanned vs. real PDFs.</strong> If the analyzer finds no extractable text, your PDF is scanned images — useful to know before promising someone searchable text.</p>
+      <p><strong>Size-check for uploads.</strong> Portals and email have limits. Knowing the exact MB up front tells you whether to compress first.</p>
       <h2>How to use</h2>
       <ol class="how-steps">
         <li>Open or drag in your PDF file.</li>
@@ -144,6 +173,9 @@
         <details><summary>What metadata can a PDF contain?</summary><p>Title, author, subject, keywords, creator software, producer, and creation/modification dates. Many files carry more than their owners realize.</p></details>
         <details><summary>Can I remove metadata with this tool?</summary><p>The analyzer shows metadata but does not edit files. To strip it, re-export the PDF from clean software or use a dedicated metadata remover.</p></details>
         <details><summary>Is my document uploaded anywhere?</summary><p>No. The file is parsed locally by JavaScript in your browser tab and never leaves your device.</p></details>
+        <details><summary>What does the PDF analyzer tell me?</summary><p>Page count, file size, PDF version, whether pages contain real text or scanned images, and embedded metadata — everything you need to know before sharing or processing a file.</p></details>
+        <details><summary>Can it detect if a PDF is scanned?</summary><p>Yes — if no extractable text is found, the pages are images (scans or photos) rather than real text. Those need OCR before text tools will work on them.</p></details>
+        <details><summary>Is my document uploaded anywhere?</summary><p>No. Analysis runs entirely in your browser — the file never leaves your device, so confidential documents stay confidential.</p></details>
       </div>
       <h2>Related tools</h2>
       <div class="related-grid">
