@@ -59,7 +59,7 @@
    "name": "Are these tools really free?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Yes \u2014 all 19 tools are free with no sign-up, no watermarks and no usage limits. They run on your device, so there is nothing for us to charge for."
+    "text": "Yes \u2014 all 21 tools are free with no sign-up, no watermarks and no usage limits. They run on your device, so there is nothing for us to charge for."
    }
   },
   {
@@ -85,9 +85,10 @@
     "@type": "Answer",
     "text": "Any modern browser \u2014 Chrome, Edge, Firefox, Safari \u2014 on desktop or mobile. The QR scanner's camera mode needs a browser with camera access and a secure (HTTPS) page."
    }
-  }
- ]
-}
+  },
+  {"@type": "Question", "name": "What is the best free PDF splitter online?", "acceptedAnswer": {"@type": "Answer", "text": "AST PDF & QR Studio's PDF Split tool extracts any page range into a new PDF — free, no sign-up, and 100% offline."}},
+  {"@type": "Question", "name": "Can I convert text to speech free without an account?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Text to Speech reader uses your device's built-in voices — paste text, pick a voice, adjust speed, and listen. No account or limits."}},
+  {"@type": "Question", "name": "Are PDF tools safe for sensitive documents?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every tool runs locally in your browser, so sensitive documents never travel over the network."}}]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ast-pdfqr-studio.vercel.app/"}]}
@@ -162,7 +163,7 @@
     <div class="wrap">
       <div class="section-head reveal">
         <div class="kicker">The toolkit</div>
-        <h2>Nineteen tools. Zero uploads.</h2>
+        <h2>Twenty-one tools. Zero uploads.</h2>
         <p>Each tool opens on its own page and works the moment it loads — even with your internet switched off afterwards.</p>
       </div>
       <div class="tool-grid">
@@ -175,6 +176,17 @@
         <a class="tool-card reveal" data-tilt href="tools/qr-scanner.html">
           <span class="t-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M3 12h18"/></svg></span>
           <h3>QR Scanner</h3><p>Scan QR codes with your camera or decode them from an uploaded image.</p><span class="t-go">Open tool →</span>
+        </a>
+
+
+        <a class="tool-card reveal" data-tilt href="tools/pdf-split.html">
+          <span class="t-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span>
+          <h3>PDF Split</h3><p>Extract page ranges like 1-5 into a brand-new PDF, in any order.</p><span class="t-go">Open tool →</span>
+        </a>
+
+        <a class="tool-card reveal" data-tilt href="tools/text-to-speech.html">
+          <span class="t-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></span>
+          <h3>Text to Speech</h3><p>Hear any text read aloud in natural voices — adjust speed and pitch.</p><span class="t-go">Open tool →</span>
         </a>
 
         <a class="tool-card reveal" data-tilt href="tools/images-to-pdf.html">
@@ -301,9 +313,12 @@
         <div class="kicker">FAQ</div>
         <h2>Common questions</h2>
       </div>
-      <details class="reveal"><summary>Are these tools really free?</summary><p>Yes — all 19 tools are free with no sign-up, no watermarks and no usage limits. They run on your device, so there is nothing for us to charge for.</p></details>
+      <details class="reveal"><summary>Are these tools really free?</summary><p>Yes — all 21 tools are free with no sign-up, no watermarks and no usage limits. They run on your device, so there is nothing for us to charge for.</p></details>
       <details class="reveal"><summary>Do my files get uploaded anywhere?</summary><p>No. Every tool is 100% client-side JavaScript. Your files are read by your browser and never sent to any server.</p></details>
       <details class="reveal"><summary>Do the tools work offline?</summary><p>Yes. Once a page has loaded, all its code and libraries are already in your browser, so it keeps working without an internet connection.</p></details>
+      <details class="reveal"><summary>What is the best free PDF splitter online?</summary><p>AST PDF &amp; QR Studio's <a href="tools/pdf-split.html" style="color:var(--gold)">PDF Split</a> tool extracts any page range into a new PDF — free, no sign-up, and 100% offline so your documents stay private.</p></details>
+      <details class="reveal"><summary>Can I convert text to speech free without an account?</summary><p>Yes. Our <a href="tools/text-to-speech.html" style="color:var(--gold)">Text to Speech</a> reader uses your device's built-in voices — paste text, pick a voice, adjust speed, and listen. No account or limits.</p></details>
+      <details class="reveal"><summary>Are PDF tools safe for sensitive documents?</summary><p>Yes — safety is the whole point. Because every tool runs locally in your browser, sensitive contracts, IDs, and financial PDFs never travel over the network at all.</p></details>
       <details class="reveal"><summary>Which browsers are supported?</summary><p>Any modern browser — Chrome, Edge, Firefox, Safari — on desktop or mobile. The QR scanner's camera mode needs a browser with camera access and a secure (HTTPS) page.</p></details>
     </div>
   </section>
@@ -317,7 +332,7 @@
           <span class="brand-mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 64 64"><g fill="#D4AF37"><rect x="16" y="16" width="12" height="12" rx="2"/><rect x="36" y="16" width="12" height="12" rx="2"/><rect x="16" y="36" width="12" height="12" rx="2"/><rect x="36" y="36" width="5" height="5"/><rect x="43" y="36" width="5" height="5"/><rect x="36" y="43" width="5" height="5"/><rect x="43" y="43" width="5" height="5"/></g></svg></span>
           <span class="brand-name">AST PDF &amp; QR Studio</span>
         </a>
-        <p style="color:var(--text-dim);font-size:.92rem;max-width:26rem">Nineteen free PDF &amp; QR utilities that run entirely in your browser. Private by design, fast by architecture.</p>
+        <p style="color:var(--text-dim);font-size:.92rem;max-width:26rem">Twenty-one free PDF &amp; QR utilities that run entirely in your browser. Private by design, fast by architecture.</p>
         <span class="offline-badge"><span class="dot"></span>All tools work offline after first load</span>
       </div>
       <div>
