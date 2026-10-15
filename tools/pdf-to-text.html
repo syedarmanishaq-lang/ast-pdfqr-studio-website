@@ -34,34 +34,58 @@
 </script>
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
-  {
-   "@type": "Question",
-   "name": "Why is the text empty for my scanned PDF?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Scanned PDFs are images of pages, not real text \u2014 extracting them needs OCR (optical character recognition), which this tool does not do. It works on PDFs with embedded text, like exports from Word or Google Docs."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Is the original formatting preserved?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "No \u2014 this tool extracts plain text. Fonts, colors, and layout are not preserved; use it when you need the words, not the design."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Is there a file size limit?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "The tool handles typical documents easily, including hundred-page PDFs. Extremely large files may take a few extra seconds to process."
-   }
-  }
- ]
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why is the text empty for my scanned PDF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scanned PDFs are images of pages, not real text — extracting them needs OCR (optical character recognition), which this tool does not do. It works on PDFs with embedded text, like exports from Word or Google Docs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the original formatting preserved?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — this tool extracts plain text. Fonts, colors, and layout are not preserved; use it when you need the words, not the design."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a file size limit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The tool handles typical documents easily, including hundred-page PDFs. Extremely large files may take a few extra seconds to process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my extracted text empty or garbled?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The PDF is likely a scanned image rather than real text. Scanned pages need OCR (optical character recognition) before text can be extracted. Text-based PDFs extract perfectly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will formatting like bold and tables survive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plain text extraction keeps the words and their order, but not visual formatting. Tables come out as text rows — usable, but plan a quick cleanup pass."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I extract text from specific pages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Extract the full text, then keep what you need. For targeted extraction, split the PDF to your pages first with the PDF Split tool, then extract."
+      }
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -130,6 +154,11 @@
       <p>Need the words out of a PDF? This free PDF-to-text extractor pulls all text content from your document, page by page, right in your browser. It is ideal for quoting passages, feeding text into a translator, auditing document contents, or recovering text from a PDF when you have lost the original file.</p>
       <p>Extraction preserves the reading order of each page, and you can copy the result or download it as a clean .txt file. One honest limitation: this tool extracts embedded text — it cannot read text inside scanned images of pages (that requires OCR). If your PDF was exported from Word, Google Docs, or any normal software, extraction works perfectly. Your document never leaves your device during the process.</p>
       <p class="seo-extra">Extract text from any PDF in seconds with this free online PDF to text converter. Just drop in your file and copy clean, selectable text — ideal for quoting documents, feeding text into translators, or archiving content. Everything runs offline in your browser, so private documents stay private. No uploads, no watermarks, no sign-up.</p>
+
+      <h3>Pro tips</h3>
+      <p><strong>Scanned PDFs need OCR first.</strong> If your PDF is photos of pages (not selectable text), extraction will return little or nothing. Run it through an OCR tool first, then extract the text here.</p>
+      <p><strong>Clean up after extraction.</strong> Extracted text often has odd line breaks and hyphenation. Paste into a text editor, fix the breaks, and you have a clean document in minutes instead of retyping hours.</p>
+      <p><strong>Great for quotes and research.</strong> Pull exact quotes from papers and reports with perfect accuracy — no more retyping and introducing typos into citations.</p>
       <h2>How to use</h2>
       <ol class="how-steps">
         <li>Open or drag in your PDF file.</li>
@@ -142,6 +171,9 @@
         <details><summary>Why is the text empty for my scanned PDF?</summary><p>Scanned PDFs are images of pages, not real text — extracting them needs OCR (optical character recognition), which this tool does not do. It works on PDFs with embedded text, like exports from Word or Google Docs.</p></details>
         <details><summary>Is the original formatting preserved?</summary><p>No — this tool extracts plain text. Fonts, colors, and layout are not preserved; use it when you need the words, not the design.</p></details>
         <details><summary>Is there a file size limit?</summary><p>The tool handles typical documents easily, including hundred-page PDFs. Extremely large files may take a few extra seconds to process.</p></details>
+        <details><summary>Why is my extracted text empty or garbled?</summary><p>The PDF is likely a scanned image rather than real text. Scanned pages need OCR (optical character recognition) before text can be extracted. Text-based PDFs extract perfectly.</p></details>
+        <details><summary>Will formatting like bold and tables survive?</summary><p>Plain text extraction keeps the words and their order, but not visual formatting. Tables come out as text rows — usable, but plan a quick cleanup pass.</p></details>
+        <details><summary>Can I extract text from specific pages?</summary><p>Extract the full text, then keep what you need. For targeted extraction, split the PDF to your pages first with the PDF Split tool, then extract.</p></details>
       </div>
       <h2>Related tools</h2>
       <div class="related-grid">
