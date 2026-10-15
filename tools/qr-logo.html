@@ -36,42 +36,66 @@
 </script>
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
-  {
-   "@type": "Question",
-   "name": "Will a QR code with a logo still scan?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Yes. This tool uses the highest error-correction level (H), which lets a QR code lose up to 30% of its area and still scan. The logo covers far less than that, on a clean white pad."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "What logo image should I use?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "A square PNG with a transparent or white background works best. The logo is scaled to fit a centered badge, so wide or tall images are letterboxed automatically."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Can I use this QR code commercially?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Yes — codes you generate here are yours to use anywhere: menus, packaging, business cards, posters, or your website. No attribution required."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Is anything uploaded?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "No. The QR code and logo compositing happen entirely in your browser. Your logo image never leaves your device."
-   }
-  }
- ]
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Will a QR code with a logo still scan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. This tool uses the highest error-correction level (H), which lets a QR code lose up to 30% of its area and still scan. The logo covers far less than that, on a clean white pad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What logo image should I use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A square PNG with a transparent or white background works best. The logo is scaled to fit a centered badge, so wide or tall images are letterboxed automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use this QR code commercially?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — codes you generate here are yours to use anywhere: menus, packaging, business cards, posters, or your website. No attribution required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is anything uploaded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The QR code and logo compositing happen entirely in your browser. Your logo image never leaves your device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will adding my logo break the QR code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not if you follow the rules: keep the logo under 25% of the code area, centered, and use error-correction level H. The code's redundancy is specifically designed to survive partial covering."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What image format should my logo be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PNG with transparency works best. Avoid very detailed logos — simple, bold marks scan far more reliably at small sizes than intricate ones."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change the QR code colors too?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but keep contrast high: dark modules on a light background. Inverted (light-on-dark) codes fail on many scanners, and low-contrast color pairs like yellow-on-white are unreliable."
+      }
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -154,6 +178,11 @@
       <p>A plain black-and-white QR code works, but a branded one gets scanned more. This free tool puts your logo in the center of the QR code — perfect for restaurant menus, product packaging, business cards, event posters, and Wi-Fi signs that carry your brand.</p>
       <p>Scannability is protected by design: the generator uses the highest error-correction level (H), so the code survives the logo covering its middle, and your logo sits on a clean white badge that keeps the contrast crisp for phone cameras.</p>
       <p class="seo-extra">Want a QR code with a logo online without signing up anywhere? Upload your logo, type your link or text, and download a print-ready PNG — all free, all in your browser. The high error-correction level means the code scans reliably even with your emblem in the center, making it ideal for menus, packaging, and marketing material.</p>
+
+      <h3>Pro tips</h3>
+      <p><strong>Keep the logo small and centered.</strong> Your logo should cover no more than 20–25% of the code's area, and you must use error-correction level H. The redundant data is what lets the code survive the covered center.</p>
+      <p><strong>High contrast wins.</strong> A dark logo on the code's dark modules confuses scanners. Use a logo with a white background badge, or place it on a light rounded square so the modules around it stay readable.</p>
+      <p><strong>Test on real phones.</strong> Designer QR codes are the most likely to fail. Scan with at least three different camera apps before publishing — especially older Android phones, which are pickiest.</p>
       <h2>How to use</h2>
       <ol class="how-steps">
         <li>Type the text or URL the code should open.</li>
@@ -167,6 +196,9 @@
         <details><summary>What logo image should I use?</summary><p>A square PNG with a transparent or white background works best. The logo is scaled to fit a centered badge, so wide or tall images are letterboxed automatically.</p></details>
         <details><summary>Can I use this QR code commercially?</summary><p>Yes — codes you generate here are yours to use anywhere: menus, packaging, business cards, posters, or your website. No attribution required.</p></details>
         <details><summary>Is anything uploaded?</summary><p>No. The QR code and logo compositing happen entirely in your browser. Your logo image never leaves your device.</p></details>
+        <details><summary>Will adding my logo break the QR code?</summary><p>Not if you follow the rules: keep the logo under 25% of the code area, centered, and use error-correction level H. The code's redundancy is specifically designed to survive partial covering.</p></details>
+        <details><summary>What image format should my logo be?</summary><p>PNG with transparency works best. Avoid very detailed logos — simple, bold marks scan far more reliably at small sizes than intricate ones.</p></details>
+        <details><summary>Can I change the QR code colors too?</summary><p>Yes, but keep contrast high: dark modules on a light background. Inverted (light-on-dark) codes fail on many scanners, and low-contrast color pairs like yellow-on-white are unreliable.</p></details>
       </div>
       <h2>Related tools</h2>
       <div class="related-grid">
